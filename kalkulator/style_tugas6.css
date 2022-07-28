@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom, rgb(20,81,121) 0%, rgb(44,171,255) 100%, rgb(36,138,208) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: arial;
+}
+.container{
+    background-color: white;
+    width: 40%;
+    padding:30px 20px ;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, .4);
+}
+.container h2{
+    text-align: center;
+}
+.form{
+    display: flex;
+    margin-top: 10px;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form input[type='number']{
+    margin: 5px 0;
+    width: 200px;
+    height: 30px;
+    font-size: 1.1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding:5px 10px;
+    box-sizing: border-box;
+}
+.form input:focus{
+    border:1px solid lightblue;
+    outline: lightblue;
+}
+.form .operand{
+    list-style: none;
+}
+.form 
+.radio{
+    display: none;
+}
+.operator{
+    border: 1px solid rgb(173, 170, 170);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.atas,.bawah{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.atas label, .bawah label{
+    border: 1px solid rgb(31, 175, 168);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.atas label:hover, .bawah label:hover{
+    background-color: rgb(31, 175, 168);
+    color: white;
+    font-weight: bold;
+}
+.hasil {
+    text-align: center;
+}
+.angka{
+    font-size: 2em;
+}
+.kirim{
+    border: 1px solid rgb(173, 170, 170);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.kirim:hover{
+    background-color: rgb(31, 175, 168);
+    color: white;
+}
